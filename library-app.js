@@ -1,7 +1,7 @@
 let id = 0;
 
 
-
+//insert rows
 document.getElementById('add').addEventListener('click', () => {
         let createdDate = new Date();
         let table = document.getElementById('list');
@@ -20,6 +20,8 @@ document.getElementById('add').addEventListener('click', () => {
         document.getElementById('new-author').value = '';
     });
 
+    //create a button for returned books that removes the row
+
     function createDeleteButton(id) {
         let btn1 = document.createElement('button');
         btn1.className = 'btn btn-success';
@@ -33,6 +35,8 @@ document.getElementById('add').addEventListener('click', () => {
         return btn1;
 
     }
+
+    //a button for overdue books that creates a badge
 
     function createOverdueButton(id) {
         let btn2 = document.createElement('button');
