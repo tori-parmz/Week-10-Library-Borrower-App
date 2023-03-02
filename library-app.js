@@ -36,7 +36,7 @@ document.getElementById('add').addEventListener('click', () => {
 
     }
 
-    //a button for overdue books that creates a badge
+    //a button for overdue books that creates a badge when clicked
 
     function createOverdueButton(id) {
         let btn2 = document.createElement('button');
